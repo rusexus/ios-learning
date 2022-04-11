@@ -6,16 +6,17 @@ import Foundation
 //Необходимо вычислить площадь и периметр прямоугольного треугольника.
 //Условия: Катеты прямоугольного треугольника: AC = 8.0, CB = 6.0. Гипотенузу треугольника AB вычисляем при помощи функции sqrt(Double), заменив Double суммой квадратов катетов
 
-let AC:Int = 8
-let CB:Int = 6
+let AC:Double = 8
+let CB:Double = 6
 
-let AB:Double = sqrt(Double(AC + CB))
+let AB = sqrt(AC*AC + CB*CB)
 
-let P:Double = Double((AC + CB) / 2)
-let S:Int = (Int(AB) + AC + CB)
+let S:Double = Double((AC * CB) / 2)
+let P:Double = (Double(Int(AB)) + AC + CB)
 
-print (" Площадь:\(P)")
-print ("Периметр:\(S)")
+print ("Гипотенуза: \(AB)")
+print ("Площадь: \(S)")
+print ("Периметр: \(P)")
 
 
 
