@@ -18,6 +18,6 @@ var daysInYear = 365
 
 var depositPeriod = daysInYear * 2
 
-var accruedInterest = (DepositFunds * annualInterestRate * depositPeriod / daysInYear) / 100
+let accruedInterest = (DepositFunds * annualInterestRate * depositPeriod / daysInYear) / 100
 
 print ("Выплата по депозиту суммой \(DepositFunds) рублей (ставка \(annualInterestRate)%) через \((depositPeriod) / daysInYear) года будет \(accruedInterest)%")
