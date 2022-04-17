@@ -10,11 +10,8 @@ let CB:Double = 6
 let AB = sqrt(AC*AC + CB*CB)
 
 let S:Double = Double((AC * CB) / 2)
-let P:Double = (Double(Int(AB)) + AC + CB)
+var P:Double = (Double(Int(AB)) + AC + CB)
 
 print ("Гипотенуза: \(AB)")
 print ("Площадь: \(S)")
 print ("Периметр: \(P)")
-
-
-
