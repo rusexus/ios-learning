@@ -40,4 +40,21 @@ print ("Результат умножения \(oneNumber) и \(secondNumber) р
 case .division:
 print ("Результат деления \(oneNumber) и \(secondNumber) равен \(oneNumber / secondNumber)")
 }
+
+enum CurrencyUnit {
+    case rouble
+    case dollar(DollarCountries)
+    case euro
+    
+    enum DollarCountries {
+    case USA
+    case Canada
+    case Australia
+    }
+}
+
+let CurrencyUnit = CurrencyUnit.dollar(.Canada)
+
+
+
 //: [Next](@next)
