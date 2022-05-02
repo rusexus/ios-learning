@@ -27,7 +27,7 @@ import Foundation
 
 //: [Next](@next)
 
-var userInputAge: String = "34"
+var userInputAge: String = "34e"
 
 let userAge: Int? = Int(userInputAge)
 let userAge: Int! = Int(userInputAge)

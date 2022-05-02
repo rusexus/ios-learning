@@ -43,7 +43,7 @@ print ("Результат деления \(oneNumber) и \(secondNumber) рав
 
 enum CurrencyUnit {
     case rouble
-    case dollar(DollarCountries)
+    case dollar(national: DollarCountries)
     case euro
     
     enum DollarCountries {
@@ -53,7 +53,7 @@ enum CurrencyUnit {
     }
 }
 
-let CurrencyUnit = CurrencyUnit.dollar(.Canada)
+let currency: CurrencyUnit = .dollar(national: .Canada)
 
 
 
